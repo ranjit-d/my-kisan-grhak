@@ -1,0 +1,41 @@
+
+<div class="container">
+  <h4 class="mt-5">Wecome</h4>
+  <span class="form-text">
+    Login to explore more feature
+
+  </span>
+  <form #loginform="ngForm" (ngSubmit)="onlogin(loginform.value)">
+ <label><i class="fa-solid fa-user m-2"></i></label>
+      <input type="text" name="mobile" minlength="1"   required #mobile="ngModel" ngModel>
+<div>
+  <span *ngIf="mobile.invalid && mobile.touched" class="text-danger">
+    please enter valid input
+  </span>
+</div>
+<div></div>
+
+<label><i class="fa-solid fa-lock m-2"></i></label>
+
+  <input type="password" name="password" minlength="1"  required #password="ngModel" ngModel>
+  <div>
+    <span *ngIf="password.invalid && password.touched" class="text-danger">
+      please enter valid password
+    </span>
+  </div>
+  <div></div>
+  <span class="form-text">
+   Forget Password?
+
+  </span>
+<div></div>
+  <button class="btn btn-success" [disabled]="loginform.invalid">Login</button>
+
+  </form>
+
+  <p>Don't have an account?
+    <a routerLink="/signup">Signup</a>
+  </p>
+</div>
+
+<!-- <router-outlet></router-outlet> -->

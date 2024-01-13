@@ -1,0 +1,110 @@
+
+
+
+
+.card-top{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap:break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .25rem;
+
+}
+
+.item img{
+  width: 55px;
+}
+
+.card{
+  padding: 20px;
+  margin: 30px;
+}
+
+
+.item{
+  margin: 12px 160px;
+  text-align: center;
+}
+
+.item a:hover{
+  color: blue;
+}
+
+
+
+
+.card img{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+  margin-left: 48px;
+}
+
+.card img:hover{
+  transition: 0.3s ease-in-out;
+  transform:scale(1.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap:break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: .25rem;
+
+  }
+
+  .item img{
+    width: 30px;
+  }
+
+  .item{
+    margin: 12px 5px;
+
+  }
+
+  .item a:hover{
+    color: blue;
+  }
+
+  .card{
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+
+  .card img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    margin-left: 150px;
+
+  }
+
+  .card img:hover{
+    transition: 0.3s ease-in-out;
+    transform:scale(1.1);
+  }
+  h2{
+    font-family: lato;
+    font-weight: 600;
+    margin: 20px auto 10px auto;
+    color: rgb(36, 34, 34);
+  }
+
+}
+
+

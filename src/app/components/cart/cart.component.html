@@ -1,0 +1,52 @@
+
+
+<section class="cart_section">
+  <div class="container">
+    <h2>Cart</h2>
+    <div *ngIf="getcartdetails">
+    <table class="table table-bordered">
+      <tr>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Quanity</th>
+        <th>Sub Total</th>
+        <th>Remove Item</th>
+      </tr>
+      <tr *ngFor="let getcartd of getcartdetails">
+        <td>  <img src="{{getcartd.img}}" alt="" style="width: 150px;"></td>
+        <td>₹ {{getcartd.amount}}</td>
+        <td>{{getcartd.descri}}</td>
+        <td>
+          <div class="content">
+      <button type="button" class="btn" (click)="increseqnt(getcartd.proId,getcartd.Quantity)"><i class="fa-solid fa-plus"></i></button>
+            <span>{{getcartd.Quantity}}</span>
+            <button type="button" class="btn" (click)="decreseqnt(getcartd.proId,getcartd.Quantity)"><i class="fa-solid fa-minus"></i></button>
+      </div>
+        </td>
+        <td>₹ {{getcartd.Quantity*getcartd.amount |number}}</td>
+        <td>
+          <button type="button" class="btnc" (click)="ondelete(getcartd.proId)"><i class="fa-solid fa-trash" style="color: red;"></i></button>
+        </td>
+      </tr>
+    </table>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Total -₹ {{total}}</h3>
+      </div>
+      <div class="col-md-6" style="text-align: right;">
+        <button type="button" class="removeall" (click)="remomeallitem()" style="color: red;"><i class="fa-solid fa-trash" style="color: red;"></i>Remove All</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div style="text-align:center" >
+  <button type="button" routerLink="/home" class=" btn-success" >Continue Shopping</button>
+</div>
+
+
+
+
+

@@ -1,0 +1,98 @@
+/*
+.card{
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+
+
+.center img{
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  height: 162px;
+  width: 250px;
+  margin: 20px 0px;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.btn-success{
+ font-size: large;
+} */
+
+
+
+
+
+.cart_section{
+  padding: 40px 0px;
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.btn{
+  background: rgb(73, 27, 3);
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 8px;
+  }
+
+
+  @media only screen and (max-width:600px)
+{
+  .cart_section{
+    padding: 40px 0px;
+  }
+
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .btn{
+    background: rgb(94,0,0);
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 8px;
+    }
+
+}

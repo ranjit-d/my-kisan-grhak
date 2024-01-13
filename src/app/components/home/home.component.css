@@ -1,0 +1,143 @@
+
+.card-top{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap:break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .25rem;
+}
+
+.item img{
+  width: 55px;
+}
+
+.item{
+  margin: 12px 38px;
+  text-align: center;
+}
+
+
+.item a:hover{
+  color: blue;
+}
+
+.card{
+  padding: 20px;
+  margin: 30px;
+}
+
+
+
+.card img{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  margin-left: 42px;
+}
+
+.card img:hover{
+  transition: 0.3s ease-in-out;
+  transform:scale(1.1);
+}
+
+
+
+
+
+h2{
+  font-family: lato;
+  font-weight: 600;
+  margin: 20px auto 10px auto;
+  color: rgb(36, 34, 34);
+}
+.carousel-item{
+ padding: 15px;
+ cursor: -webkit-grabbing;
+
+  & img{
+    border-radius: 30px;
+    height: 500px;
+
+    box-shadow: 0px 5px 5px rgba(0,0,0,.21);
+  transition: .25s linear;
+  }
+
+  /* &:hover{
+    & img{
+      transform: translatey(-1%);
+    } */
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap:break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: .25rem;
+  }
+  .item img{
+    width: 50px;
+  }
+
+  .item{
+    margin: 10px 10px;
+  }
+  .item a:hover{
+    color: blue;
+  }
+
+  .card{
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .card img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    margin-left: 142px;
+  }
+
+
+  .card img:hover{
+
+    transition: 0.3s ease-in-out;
+    transform:scale(1.1);
+  }
+
+
+ /* h3{
+    font-family: lato;
+    font-weight: 300;
+    margin: 10px auto 10px auto;
+    color: white;
+  } */
+
+  .carousel-item{
+   padding: 15px;
+   cursor: -webkit-grabbing;
+
+    & img{
+      border-radius: 30px;
+      height: 300px;
+
+      box-shadow: 0px 5px 5px rgba(0,0,0,.21);
+    transition: .25s linear;
+    }
+}
+  }
+

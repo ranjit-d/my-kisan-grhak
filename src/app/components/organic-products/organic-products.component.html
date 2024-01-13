@@ -1,0 +1,40 @@
+
+<h2 style="text-align: center;">organic-products</h2>
+<div class="card-top container-fluid m-2">
+
+  <div class="container d-flex">
+
+<!-- <div class="container" style="text-align: center;">
+  <h2>Organic Products Grocery</h2>
+  <div class="row "> -->
+    <ng-container *ngFor="let prod of organicproducts">
+      <div class="item">
+      <a>
+        <img src="{{prod.img}}" alt="">
+        <p>{{prod.descri}}</p>
+</a>
+</div>
+</ng-container>
+
+</div>
+</div>
+
+<section>
+  <div class="container" style="text-align: center;">
+    <!-- <h2>organicproduct</h2> -->
+    <div class="row">
+      <ng-container *ngFor="let prod of organicproduct">
+        <div class="card col-md-3">
+          <img src="{{prod.img}}" alt="" style="text-align: center;">
+          <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{prod.descri}}</p>
+          <h5><strong>₹{{prod.amount}}</strong></h5>
+         <div><button class="btn btn-primary" (click)="addtocart(prod)">Add To Cart</button>
+         </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+
+

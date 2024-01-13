@@ -1,0 +1,66 @@
+
+.container{
+  text-align: center;
+  margin-top: 80px;
+
+}
+
+#phone{
+  width: 70px;
+}
+
+input[type=tel] {
+    padding: 12px 20px;
+    margin: 4px 6px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+
+input[type=text] {
+width: 40%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.btn-success{
+  margin-top: 20px;
+ width: 30%;
+}
+
+@media only screen and(max-width:600px){
+  .container{
+    text-align: center;
+  }
+
+  #phone{
+    width: 70px;
+  }
+
+  input[type=tel] {
+      padding: 12px 20px;
+      margin: 4px 6px;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+
+
+  input[type=text] {
+    width:43%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+}
+
+
+
+

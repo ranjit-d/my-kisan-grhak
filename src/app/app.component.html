@@ -1,0 +1,41 @@
+<!-- src/app/navbar/navbar.component.html -->
+
+
+<!-- navbar  -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid" style="color: #fff;">
+    <h2 class="ms-4">Kisan Grahak</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <span class="fa fa-search search-icon"></span>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+      </ul>
+    </div>
+    <div class="d-flex">
+      <a class="nav-link" routerLink="/home">Home</a>
+            <a class="nav-link" routerLink="/">My Account</a>
+      <a class="nav-link" routerLink="/login">login</a>
+<div class="nav-link">
+  <i  class="fa-solid fa-cart-shopping" routerLink="/cart" style="font-size: 20px;"></i>
+  <div class="badge bg-danger">{{cartitem}}</div>
+</div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- navbar end  -->
+
+<router-outlet></router-outlet>
+
+
+

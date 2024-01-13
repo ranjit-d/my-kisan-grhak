@@ -1,0 +1,36 @@
+<!-- <p>spices works!</p> -->
+
+
+
+
+<h2 style="text-align: center;">Dry-Fruits</h2>
+<div class="card-top container-fluid m-2">
+  <div class="container d-flex">
+  <ng-container *ngFor="let prod of dryfruits">
+    <div class="item">
+    <a>
+      <img src="{{prod.img}}" alt="">
+    <p>{{prod.descri}}</p>
+    </a>
+  </div>
+  </ng-container>
+</div>
+</div>
+
+
+<section>
+  <div class="container" style="text-align: center;">
+    <!-- <h2 >Dry Fruits</h2> -->
+    <div class="row">
+      <ng-container *ngFor="let product of dryfruitss">
+        <div class="card col-md-3">
+          <img src="{{product.img}}" alt="" style="text-align: center;">
+          <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.descri}}</p>
+          <h5><strong>₹{{product.amount}}</strong></h5>
+         <div><button class="btn btn-primary" (click)="addtocart(product)">Add To Cart</button>
+         </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  </section>

@@ -1,0 +1,33 @@
+
+<div class="container">
+<div>
+  <h3 class="mt-5">Get Connected With Our Store</h3>
+</div>
+  <div>
+    <span class="form-text">
+      Please Enter your mobile number to proceed
+    </span>
+  </div>
+<form #signupform="ngForm" (ngSubmit)="onsignup(signupform.value)">
+
+    <input  type="tel" id="phone" name="phone"   required placeholder="+91" />
+    <input type="text" name="password"  required #password="ngModel" ngModel placeholder="10 degit phone number">
+    <div>
+      <span *ngIf="password.invalid && password.touched" class="text-danger">
+      Enter valid Mobile number
+      </span>
+    </div>
+    <div></div>
+      <div>
+        <button type="button" class="btn btn-success">NEXT</button>
+      </div>
+      <br>
+      <p>
+        <i class="fa-solid fa-arrow-left"></i>Back to
+        <a routerLink="/login">Login</a>
+      </p>
+</form>
+</div>
+
+<br>
+
